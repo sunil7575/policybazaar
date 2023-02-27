@@ -1,0 +1,175 @@
+body {
+  font-family: Roboto, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+    "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+}
+.getAppContainer {
+  background-color: #f7f9ff;
+  display: flex;
+  padding: 3em;
+  width: 90%;
+  margin: 5em auto;
+  justify-content: space-between;
+}
+
+.gATitle {
+  font-size: 30px;
+  line-height: 30px;
+  padding: 0;
+}
+.app_block {
+  padding: 85px 0 40px;
+  background: #f7f9ff;
+}
+.app_block .container {
+  max-width: 1170px;
+  width: 85%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.app_block .container .copy_part {
+  width: 50%;
+  text-align: left;
+}
+.app_block .container .copy_part p.text_head {
+  font-size: 30px;
+  color: #000;
+  line-height: 40px;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.app_block .container .copy_part p.line {
+  text-align: left;
+  margin: 10px 0 20px;
+}
+.app_block .container .copy_part p.line span {
+  display: block;
+  width: 60px;
+  height: 4px;
+  margin-top: 15px;
+  background: #0065ff;
+}
+
+.app_block .container .copy_part p.control {
+  color: #5e6c84;
+  font-size: 18px;
+  padding-bottom: 40px;
+}
+
+.app_block .container .copy_part .list {
+  margin: 0;
+  padding: 0;
+}
+.app_block .container .copy_part .list li {
+  list-style: none;
+  margin: 0 0 0 30px;
+  padding: 0 0 20px 0;
+  font-size: 14px;
+  color: #253858;
+  font-weight: 500;
+}
+
+.app_block .container .copy_part .list li::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: url("https://static.pbcdn.in/cdn/images/home-v1/star-outline.png")
+    no-repeat;
+  /* background-size: auto; */
+  display: inline-block;
+  vertical-align: middle;
+  background-size: cover;
+  margin: 0 14px 0 -30px;
+}
+
+.app_block .container span.text {
+  font-size: 14px;
+  line-height: 24px;
+  color: #505f79;
+  padding: 20px 0 20px;
+  display: block;
+  font-weight: 500;
+}
+.app_block .container .copy_part .googleplay {
+  width: 170px;
+  height: 50px;
+  display: inline-block;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2560px-Google_Play_Store_badge_EN.svg.png")
+    no-repeat;
+  background-size: cover;
+  margin-right: 20px;
+}
+.app_block .container .copy_part .install_now {
+  width: 170px;
+  height: 50px;
+  display: inline-block;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/1200px-Download_on_the_App_Store_Badge.svg.png")
+    no-repeat;
+  background-size: cover;
+  margin-right: 20px;
+}
+/* .download-app1 {
+    padding: 10px 0 10px 24px;
+  } */
+
+.ios {
+  background-position: 0 -80px;
+  margin-right: 0;
+}
+.app_block .container .mobile {
+  width: 50%;
+  text-align: center;
+}
+
+.rightAppSec {
+  width: 50%;
+}
+.rightAppSecImg {
+  vertical-align: middle;
+  vertical-align: middle;
+  height: fit-content;
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}.mobile2 {
+  display: none;
+}
+
+@media screen and (max-width: 750px) {
+  .app_block .container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    margin: auto;
+    justify-content: space-between;
+  }
+  .app_block .container .copy_part {
+    width: 100%;
+  }
+  .mobile2 {
+    display: inline-block;
+    width: 60%;
+    margin: auto;
+  }
+  .app_block .container .mobile {
+    display: none;
+  }
+}

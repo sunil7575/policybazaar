@@ -1,0 +1,216 @@
+body {
+  font-family: Roboto, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+    "Helvetica Neue", Arial, sans-serif;
+}
+
+.best_place {
+  background: url("https://static.pbcdn.in/cdn/images/home-v1/left-bg.png") left
+      top no-repeat,
+    url("https://static.pbcdn.in/cdn/images/home-v1/right-bg.png") right top
+      no-repeat;
+  min-height: 510px;
+}
+
+.best_place .container {
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+  padding: 0;
+  transition: all 0.4s ease-in;
+}
+
+.container {
+  width: 73.13%;
+  position: relative;
+}
+
+.best_place .container .left_block {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  padding-bottom: 26px;
+  scrollbar-width: none;
+}
+
+.best_place .container .left_block .txt_block.opacity-1 {
+  opacity: 1;
+  transition: all 0.5s ease-in;
+  margin-left: 0;
+}
+.best_place .container .left_block .txt_block {
+  font-size: 36px;
+  width: 40%;
+  color: #253858;
+  line-height: 54px;
+  font-weight: 300;
+  align-self: flex-start;
+  margin-top: 110px;
+}
+
+.best_place .container .left_block .txt_block span {
+  font-weight: 500;
+}
+
+.best_place .container .right_block.top_0 {
+  margin-top: 0;
+  transition: all 0.5s ease-in;
+  opacity: 1;
+}
+.best_place .container .right_block {
+  width: 60%;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.best_place .container .right_block .info_box::before {
+  content: "";
+  position: absolute;
+  left: -2;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background: #2d3cd9;
+}
+
+.best_place .container .right_block .info_box {
+  width: 200px;
+  vertical-align: top;
+  background: #fff;
+  margin: 40px 48px 0 0;
+  height: 180px;
+  text-align: left;
+  display: inline-block;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(52, 105, 203, 0.16);
+  position: relative;
+  left: 0;
+  overflow: hidden;
+}
+
+.best_place .container .right_block .info_box p.head {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2d3cd9;
+  padding: 0 16px 0;
+}
+p.head {
+  margin: 0;
+}
+
+.best_place .container .right_block .info_box p.copy {
+  font-size: 14px;
+  line-height: 21px;
+  color: #253858;
+  padding: 10px 11px 0 16px;
+}
+
+.best_place .container .right_block .info_box {
+  margin: 64px 40px 0 0;
+}
+
+.best_place .container .right_block .info_box {
+  width: 200px;
+  vertical-align: top;
+  background: #fff;
+  height: 180px;
+  text-align: left;
+  display: inline-block;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(52, 105, 203, 0.16);
+  position: relative;
+  left: 0;
+  overflow: hidden;
+}
+.best_place .container .right_block .info_box.insurer::before {
+  background: #0bbdf2;
+}
+
+.best_place .container .right_block .info_box.insurer span.top_icon {
+  background-position: 0 -34px;
+}
+
+.best_place .container .right_block .info_box.insurer p.head {
+  color: #0bbdf2;
+}
+
+.best_place .container .right_block .info_box.lowest_price::before {
+  background: #47d990;
+}
+
+.best_place .container .right_block .info_box.lowest_price {
+  margin: 24px 0 0 0;
+}
+
+.best_place .container .right_block .info_box.lowest_price span.top_icon {
+  background-position: 0 -68px;
+}
+
+.best_place .container .right_block .info_box span.top_icon {
+  width: 24px;
+  height: 24px;
+  margin: 16px;
+  display: inline-block;
+  background: url("https://static.pbcdn.in/cdn/images/home-v1/best-place-icons.png")
+    no-repeat;
+  background-size: 100%;
+}
+
+.best_place .container .right_block .info_box.lowest_price p.head {
+  color: #47d990;
+}
+
+.best_place .container .right_block .info_box.claims::before {
+  background: #ffc400;
+}
+
+.best_place .container .right_block .info_box.claims {
+  margin: 46px 0 20px 48px;
+}
+
+.best_place .container .right_block .info_box.claims span.top_icon {
+  background-position: 0 -102px;
+}
+
+.best_place .container .right_block .info_box.claims p.head {
+  color: #ffc400;
+}
+
+.lazy {
+  width: 1px;
+  height: 1px;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 750px) {
+  .container {
+    width: 85%;
+  }
+  .best_place .container .left_block {
+    width: 100%;
+    flex-direction: column;
+  }
+  .best_place .container .left_block .txt_block {
+    width: 100%;
+  }
+  .best_place .container .right_block {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    text-align: right;
+    padding-right: 10px;
+  }
+  .best_place .container .right_block .info_box,
+  .best_place .container .right_block .info_box.claims,
+  .best_place .container .right_block .info_box.lowest_price {
+    margin: 20px 0;
+  }
+}
